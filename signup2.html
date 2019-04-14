@@ -20,7 +20,7 @@
 	</div>
 	<script type="text/javascript">
 		Parse.initialize("soon1");
-		Parse.serverURL="http://localhost:1337/parse"
+		Parse.serverURL="https://soongame.herokuapp.com/parse"
 
 		function signup(){
 			var id = $("#id").val();
@@ -40,7 +40,7 @@
 			user.signUp()
 			.then((user) => {
 				alert("SignUp Success");
-				window.location = "signin2.html"
+				window.location = "signin.html"
 			}, (error) => {
 				alert("SignUp Error : " + error.message);
 			});
